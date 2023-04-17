@@ -29,4 +29,41 @@ func main() {
 	areaCuadrado := BaseCuadrado * BaseCuadrado
 	fmt.Println("Area cuadrado: ", areaCuadrado)
 
+	x := 10
+	y := 50
+
+	//suma
+	result := x + y
+	fmt.Println("suma", result)
+
+	//resta
+	result = y - x
+	fmt.Println("resta", result)
+
+	//multiplicacion
+	result = x * y
+	fmt.Println("multiplicacion", result)
+
+	//division
+	result = y / x
+	fmt.Println("Divicion", result)
+
+	//modulo si es 0 es exacta
+	result = y % x
+	fmt.Println("modulo", result)
+
+	//Printf %s enteros %d numericos %v si no sabes el dato
+	nombre := "Plazi"
+	cursos := 500
+
+	fmt.Printf("%s tiene mas de %d cursos \n", nombre, cursos)
+
+	//Sprintf
+
+	message := fmt.Sprintf("%s tiene mas de %d cursos \n", nombre, cursos)
+
+	fmt.Println(message)
+
+	fmt.Printf("nombre : %T \n ", nombre)
+	fmt.Printf("Cursos : %T \n ", cursos)
 }
